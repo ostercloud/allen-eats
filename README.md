@@ -50,6 +50,7 @@ name,address,cuisine,style,price,source,notes,lat,lng,visited,my_rating,google_r
 
 1. **Parse the content** - Extract restaurant names, addresses, cuisines, and any other available info
 2. **Create CSV** - Save to `/Users/aoster/Restuarant list Keeper/[source]-restaurants.csv`
+3. Ensure there are no duplicates from other lists, look at the existing spreadsheet references in the index.html.
 3. **Geocode** (optional) - Run geocoding to add lat/lng for instant map loading
 4. **Merge or replace** - User can import CSV into their Google Sheet
 
@@ -63,10 +64,9 @@ name,address,cuisine,style,price,source,notes,lat,lng,visited,my_rating,google_r
 ## File Structure
 ```
 /Users/aoster/Restuarant list Keeper/
-├── map.html                          # Main map application
-├── SETUP.md                          # Setup instructions
-├── CLAUDE.md                         # This file
-├── nyt-100-best-2025-geocoded.csv    # NYT list with coordinates
+├── indext.html                          # Main map application
+├── README.md                         # This file
+├── example.csv                       # Example list with coordinates
 ├── geocode-restaurants.cjs           # Node script for batch geocoding
 └── [other source]-restaurants.csv    # Additional lists
 ```
